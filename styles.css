@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    background-color: gainsboro;
+}
+h1 {
+    text-align: center;
+    color: hotpink;
+    background-color: black;
+    border: 2px solid black;
+}
+h2 {
+    text-align: center;
+    color: black;
+}
+table {
+    border: 2px solid black;
+    width: 650px;
+    margin: 0 auto;
+}
+thead {
+    background-color: teal;
+}
+td {
+    border-top: 2px solid violet;
+}
+.code{
+    font-family: monospace;
+    background-color: white
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.topnav
+{
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: yellowgreen;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+
+}
