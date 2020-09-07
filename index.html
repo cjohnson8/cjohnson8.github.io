@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Table Reference</title>
+    <title>HTML CSS Cheatsheet</title>
     <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 <nav class="topnav" id="myTopnav">
@@ -12,7 +12,10 @@
         <li><a href="#OtherHTML">HTML Tags</a></li>
         <li><a href="#CSSselectors" >CSS Selectors</a></li>
         <li><a href="#CommonCSS" >Common CSS</a></li>
+        <li><a href="#htmlforms">HTML Forms</a></li>
+        <li><a href="#FormExample">HTML Form Example</a></li>
     </ul>
+    <P>Created by Christine Johnson</P>
 </nav>
 <h1 id="HTMLtable">HTML Table Reference</h1>
 <h2>Table Tags</h2>
@@ -149,7 +152,97 @@
     </tr>
 
 </table>
-<body>
-    
-</body>
+<h1 id="htmlforms">HTML Forms</h1>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+    </thead>
+    <tr>
+        <td class="code">&lt;form&gt;</td>
+        <td>Responsible for collecting information to send somewhere else</td>
+    </tr>
+    <tr>
+        <td class="code">action=""</td>
+        <td>Determines where the form's informaiton goes</td>
+    </tr>
+</table>
+<h2>Forms Validation</h2>
+<table>
+    <thead>
+        <th>name</th>
+        <th>Description</th>
+    </thead>
+    <tr>
+        <td class="code">required</td>
+        <td>Needed information before form can be submitted</td>
+    </tr>
+    <tr>
+        <td class="code">minlength=""</td>
+        <td>Minimum number of characters.</td>
+    </tr>
+</table>
+<h1>HTML Form Example</h1>
+    <form>
+        <label for="input">Input</label>
+        <input type="text" id="input" name="input" placeholder="Insert text here">
+        <br>
+        <br>
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="password" placeholder="password">
+        <br>
+        <br>
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" min="0" max="9" step="1">
+        <br>
+        <br>
+        <label for="slider">Slider</label>
+        <input type="range" id="slider" name="slider" min="0" max="9">
+        <br>
+        <br>
+        <input id="a" type="checkbox" name="checkbox" required>
+        <label for="a" value="a">A</label>
+        <input id="b" type="checkbox" name="checkbox" required>
+        <label for="b" value="a">B</label>
+        <br>
+        <br>
+        <input id="yes" type="radio" name="answer" required>
+        <label for="yes" value="yes">YES</label>
+        <input id="no" type="radio" name="answer">
+        <label for="no" value="no">NO</label>
+        <br>
+        <br>
+        
+        <label for="dropdown">DROPDOWN LIST</label>
+        <select id="dropdown" name="dropdown">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select>
+        <br>
+        <br>
+
+        <label for ="datalist">DATALIST</label>
+        <input type=“text” list=“datalist” id=“datalist” placeholder="Search your answer">
+        <datalist id="datalist">
+            <option value="haha">Haha</option>
+            <option value="hehe">Hehe</option>
+            <option value="huhu">Huhu</option>
+            <option value="hoho">Hoho</option>
+        </datalist>
+        <br>
+        <br>
+
+        <label for="textarea">TEXTAREA</label>
+        <br>
+        <textarea id="textarea" name="textarea" required rows="8" cols="18" minlength=“5” maxlength=“50” pattern="[a-zA-Z0-9]+" placeholder="Type something"></textarea>
+        <br>
+        <br>
+
+        <div class="submit-button-wrapper"><input type="submit" value="SUBMIT"></div>
+    </form>
+    <br>
+    <br>
+<footer class="footer"><a href="#myTopnav">Back to Top</a></footer>
 </html>
